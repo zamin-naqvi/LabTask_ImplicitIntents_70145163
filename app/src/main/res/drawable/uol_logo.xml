@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder logo. Replace with the real UOL logo (e.g. res/drawable/uol_logo.png). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#0D47A1"
+        android:pathData="M12,1a11,11 0,1 0,0.01 0z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M6,15c0,0.88 0.39,1.67 1,2.22V19c0,0.55 0.45,1 1,1h1c0.55,0 1,-0.45 1,-1v-1h4v1c0,0.55 0.45,1 1,1h1c0.55,0 1,-0.45 1,-1v-1.78c0.61,-0.55 1,-1.34 1,-2.22V8c0,-2.5 -2.69,-3 -6,-3S6,5.5 6,8v7zM8.5,16c-0.83,0 -1.5,-0.67 -1.5,-1.5S7.67,13 8.5,13s1.5,0.67 1.5,1.5S9.33,16 8.5,16zM15.5,16c-0.83,0 -1.5,-0.67 -1.5,-1.5s0.67,-1.5 1.5,-1.5 1.5,0.67 1.5,1.5 -0.67,1.5 -1.5,1.5zM17,11H7V7h10v4z" />
+</vector>

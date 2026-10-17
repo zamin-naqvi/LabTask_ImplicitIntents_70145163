@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">UOL Transport Desk</string>
+
+    <!-- Home screen -->
+    <string name="logo_desc">University logo</string>
+    <string name="hint_name">Your name</string>
+    <string name="btn_page">Transport Page</string>
+    <string name="btn_call_office">Call Transport Office</string>
+    <string name="btn_bus_stop">Show Bus Stop</string>
+    <string name="btn_report">Report a Problem</string>
+
+    <!-- Problem screen -->
+    <string name="title_problem">Report a Problem</string>
+    <string name="hint_phone">Driver\'s phone (03XXXXXXXXX)</string>
+    <string name="btn_call_driver">Call Driver</string>
+    <string name="hint_email">Email address</string>
+    <string name="btn_send_email">Send Email</string>
+</resources>
