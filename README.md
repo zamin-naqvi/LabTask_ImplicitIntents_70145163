@@ -1,21 +1,21 @@
-# UOL Transport Desk — Lab Task: Implicit Intents
+# UOL Transport Desk
 
-Mobile Application Development (CS02310) · Section T · SAP ID 70145163
+Lab task for Mobile Application Development (CS02310) - Implicit Intents
+Syed Zaman Abbas Naqvi | 70145163 | Section T
 
-A small Android app (Java) for the UOL Transport Office.
+This is a small Android app in Java for the UOL Transport Office. It has two screens.
 
-## Scenario 1 — Home screen (`MainActivity`)
-- University logo, name field (`etName`) and four buttons.
-- **Transport Page** → opens https://www.uol.edu.pk (`ACTION_VIEW`)
-- **Call Transport Office** → opens the dialer with 04298765432 (`ACTION_DIAL`)
-- **Show Bus Stop** → shows Thokar Niaz Baig in maps (`ACTION_VIEW`, `geo:` Uri)
-- Helper `openIntent(Context, Intent)` uses try–catch and shows "No app found for this action".
+**Home screen (MainActivity)**
+- Transport Page - opens uol.edu.pk in the browser
+- Call Transport Office - opens the dialer with 04298765432
+- Show Bus Stop - opens Thokar Niaz Baig in Google Maps
+- Report a Problem - checks that a name is entered and then opens the second screen
 
-## Scenario 2 — Problem screen (`ProblemActivity`)
-- **Report a Problem** checks the name, then opens `ProblemActivity` with an explicit Intent (`KEY_NAME` extra).
-- Greets the student: "Hello, &lt;name&gt;! Tell us what went wrong." ("Student" if no name).
-- **Call Driver** → accepts only 11 digits starting with 03, then opens the dialer.
-- **Send Email** → checks `Patterns.EMAIL_ADDRESS`, then opens an email app (`ACTION_SENDTO`).
+All the implicit intents go through one helper method `openIntent()` which shows a toast if no app is found.
 
-## How to run
-Open the project in Android Studio, sync Gradle and run on an emulator or device.
+**Problem screen (ProblemActivity)**
+- Shows "Hello, name! Tell us what went wrong."
+- Call Driver - number must be 11 digits and start with 03
+- Send Email - email is checked with Patterns.EMAIL_ADDRESS
+
+To run it just open the project in Android Studio and press Run.
